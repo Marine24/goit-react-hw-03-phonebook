@@ -1,0 +1,29 @@
+.contactForm {
+  background-color: rgb(207, 241, 250);
+  border-radius: 8px;
+  width: 500px;
+  height: 300px;
+}
+
+.contactForm label {
+  display: flex;
+  padding: 30px 50px;
+  font-size: 24px;
+  color: rgb(130, 161, 252);
+}
+
+.contactForm input {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.formBtn {
+  font-size: 18px;
+  padding: 12px 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(130, 161, 252);
+  color: white;
+  margin: 0 auto;
+  display: block;
+}

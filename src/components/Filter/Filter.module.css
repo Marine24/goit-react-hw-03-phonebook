@@ -1,0 +1,12 @@
+.title {
+  font-size: 28px;
+  padding-left: 50px;
+  color: rgb(130, 161, 252);
+}
+.filterInput {
+  width: 350px;
+  height: 30px;
+  margin-left: 50px;
+  font-size: 18px;
+  padding: 5px;
+}
