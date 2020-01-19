@@ -44,23 +44,19 @@ class App extends Component {
     const { contacts } = this.state;
     const contactToAdd = { name, number, id: generateID() };
     if (name && number) {
-      if (!isNaN(number) && isNaN(name)) {
-        if (
-          contacts.find(
-            contact => contact.name.toLowerCase() === name.toLowerCase(),
-          )
-        ) {
-          alert(`${name} is already in your contacts`);
-          return;
-        }
-        this.setState(state => ({
-          contacts: [...state.contacts, contactToAdd],
-        }));
-      } else {
-        alert('One of the fields is incorrect!');
+      if (
+        contacts.find(
+          contact => contact.name.toLowerCase() === name.toLowerCase(),
+        )
+      ) {
+        alert(`${name} is already in your contacts`);
+        return;
       }
+      this.setState(state => ({
+        contacts: [...state.contacts, contactToAdd],
+      }));
     } else {
-      alert('One of the fields is empty! Please fill all the fields!');
+      alert('One of the fields is incorrect!');
     }
   };
 

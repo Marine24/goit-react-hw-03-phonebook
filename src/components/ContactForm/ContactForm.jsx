@@ -45,7 +45,7 @@ class ContactForm extends Component {
         <label htmlFor={generateID()}>
           Number
           <input
-            type="text"
+            type="number"
             placeholder="Enter phone number"
             value={number}
             name="number"
